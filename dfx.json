@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "Listrace_backend": {
+      "main": "src/Listrace_backend/main.mo",
+      "type": "motoko"
+    },
+    "Listrace_frontend": {
+      "dependencies": [
+        "Listrace_backend"
+      ],
+      "source": [
+        "src/Listrace_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
